@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f7">
+  <meta name="description" content="Um cantinho pessoal com desenho e música.">
+  <title>Seu Presente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-open">
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__glow ambient__glow--one"></span>
+    <span class="ambient__glow ambient__glow--two"></span>
+    <span class="ambient__grain"></span>
+  </div>
+
+  <main>
+    <section class="content" aria-labelledby="pageTitle">
+      <div class="web-desktop">
+        <canvas class="bling-particles" id="blingParticles" aria-hidden="true"></canvas>
+
+        <div class="site-chrome" aria-hidden="true">
+          <div class="site-chrome__title">
+            <span class="tiny-cat">:3</span>
+            <span>seu_presente.html</span>
+            <span class="window-actions"><i>_</i><i>□</i><i>×</i></span>
+          </div>
+          <div class="site-chrome__toolbar">
+            <span>←</span><span>→</span><span>⌂</span>
+            <div class="address-bar">https://suasflores.com.br</div>
+            <span>☆</span>
+          </div>
+        </div>
+
+        <h1 class="sr-only" id="pageTitle"></h1>
+
+      <div class="content-grid">
+        <article class="art-window">
+          <div class="window-label">
+            <span>✿ Para Voce</span>
+            <span class="window-label__buttons" aria-hidden="true">_ □ ×</span>
+          </div>
+          <div class="art-toolbar" aria-hidden="true">
+            <span>Arquivo</span><span>Editar</span><span>Imagem</span><span>Ajuda</span>
+          </div>
+          <div class="art-frame">
+            <span class="art-frame__tape art-frame__tape--left" aria-hidden="true"></span>
+            <span class="art-frame__tape art-frame__tape--right" aria-hidden="true"></span>
+            <img src="assets/images/NOVA IMAGEM LIRIOS.jpeg" alt="Ilustração colorida de uma mão segurando um buquê de lírios rosas e brancos">
+            
+          </div>
+          
+          <a class="download-button" href="assets/images/NOVA IMAGEM LIRIOS.jpeg" download="desenho-lirios-colorido.jpeg">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 19h14"/>
+            </svg>
+            Baixar desenho
+          </a>
+        </article>
+
+        <div class="right-column">
+        <div class="player-stage">
+          <span class="sound-waves sound-waves--left" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="sound-waves sound-waves--right" aria-hidden="true"><i></i><i></i><i></i></span>
+        <article class="player-shell" aria-label="Player de música">
+          <span class="player-shell__shine" aria-hidden="true"></span>
+          <div class="player-brand">
+            <span>daggermaycrymp3</span>
+            <span class="player-brand__bow" aria-hidden="true">୨୧</span>
+          </div>
+
+          <div class="player-screen">
+            <div class="player-screen__top">
+              <span class="status-dot"></span>
+              <span id="trackPosition">1 song</span>
+              <span class="battery" aria-hidden="true"><i></i></span>
+            </div>
+            <canvas class="audio-visualizer" id="audioVisualizer" width="280" height="88" aria-hidden="true"></canvas>
+            <p class="track-title" id="trackTitle">Pianos</p>
+            <p class="track-artist" id="trackArtist">♡</p>
+            <div class="time-row">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+            <input class="progress" id="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Progresso da música">
+            <div class="codec-row" aria-hidden="true"><span>MP3 · 192kbps</span><span>normal</span></div>
+          </div>
+
+          <div class="click-wheel">
+            <span class="wheel-label wheel-label--menu" aria-hidden="true">MENU</span>
+            <span class="wheel-label wheel-label--previous" aria-hidden="true">◀◀</span>
+            <span class="wheel-label wheel-label--next" aria-hidden="true">▶▶</span>
+            <span class="wheel-label wheel-label--volume" aria-hidden="true">VOL</span>
+            <button class="control-button control-button--play" id="playButton" type="button" aria-label="Reproduzir">
+              <svg class="icon-play" aria-hidden="true" viewBox="0 0 24 24"><path d="m9 7 8 5-8 5V7Z"/></svg>
+              <svg class="icon-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 7h3v10H8zM13 7h3v10h-3z"/></svg>
+            </button>
+          </div>
+
+          <a class="song-download" href="assets/audio/pianoff2.mp3" download="A Primeira Vez Que Eu Te Vi.mp3">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 19h14"/></svg>
+            Baixar música
+          </a>
+          <audio id="audio" src="assets/audio/pianoff2.mp3" preload="metadata"></audio>
+        </article>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

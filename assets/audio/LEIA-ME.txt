@@ -1,0 +1,9 @@
+Coloque sua única música MP3 nesta pasta com este nome exato:
+
+musica.mp3
+
+O site já aponta para assets/audio/musica.mp3. O visitante não precisa
+selecionar ou carregar nada.
+
+Para mudar o nome exibido e o artista, edite "permanentTrack" no início
+de js/script.js. O player aceita somente essa faixa.
